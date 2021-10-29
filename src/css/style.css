@@ -1,0 +1,113 @@
+body{
+	font-family: "Franklin Gothic", sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	background: #344051;
+}
+
+.logo{
+	color: #fff;
+	font-size: 23.33px;
+	line-height: 60px;
+	padding-left: 390px;
+	float: left;
+
+}
+
+.menu{
+	float: left;
+	padding-left: 430px;
+
+}
+
+.menu li{
+	float: left;
+	color: #fff;
+	font-size: 16.67px;
+	line-height: 60px;
+	margin-right: 40px;
+	text-transform: uppercase;
+
+}
+
+.main{
+	width: 100%;
+	height: calc(100% - 60px);
+	background: url(../img/boy.png) 90% 100%/auto 85%  no-repeat , url(../img/bg.jpg) center/cover  no-repeat;
+}
+
+.title__container{
+	float: left;
+	margin: 430px 0px 0px 400px;
+	color: #2c384a;
+	text-align: center;
+
+}
+
+.title__container h1{
+	font-size: 79.17px;
+
+}
+
+.title__container h4{
+	margin: 40px;
+	font-size: 20.83px;
+	color: #79818c;
+}
+
+.title__container input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	font-size: 18.82px;
+	color: #6d7682;
+	padding: 0px 16px;
+	margin: 60px 14px 0px 14px;
+
+
+}
+
+.info{
+	width: 100%;
+	height: 717px;
+	color: #263244;
+	text-align: center;
+	background: url(../img/line.png) 50% 8% no-repeat, url(../img/boymini.png) 50% 25% no-repeat ;
+}
+
+.info_s{
+	float: center;
+	margin: 108px;
+}
+
+.info_s h2{
+	font-size: 33.33px;
+	
+}
+
+.info_s p{
+	font-family: Calibri, sans-serif;
+	margin: 322px;
+	font-size: 17.67px;
+	color: #3f495a;
+	text-align: left;
+
+}
+.info_s span{
+	font-family: Calibri, sans-serif; 
+	font-size: 17.67px;
+	color: #3f495a;
+	text-align: left;
+}
+
+.info_s input{
+	text-align: center;
+	font-size: 16.67px;
+	color: #3f495a;
+	
+}
