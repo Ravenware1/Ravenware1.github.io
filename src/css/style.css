@@ -77,7 +77,7 @@ nav{
 	height: 70%;
 	color: #263244;
 	text-align: center;
-	background: url(../img/boymini.png) 50% 25% no-repeat, url(../img/line.png) 50% 9% no-repeat  ;
+	background: url(../img/boymini.png) 50% 25% no-repeat, url(../img/line.png) 50% 8% no-repeat  ;
 }
 
 .info_s{
@@ -118,7 +118,7 @@ nav{
 .skills{
 	width: 100%;
 	height: 55%;
-	background: url(../img/line.png) 50% 34% no-repeat, url(../img/bg2.jpg) center/cover no-repeat ;
+	background: url(../img/line.png) 50% 162px no-repeat, url(../img/bg2.jpg) center/cover no-repeat ;
 	text-align: center;
 	color: #263244;
 }
@@ -153,4 +153,121 @@ nav{
 	
 }
 
+.case{
+	width: 100%;
+	height: 115%;
+	background: url(../img/line.png) 50% 162px no-repeat,  url(../img/case.jpg) 0% 269px no-repeat;
+	text-align: center;
+	color: #384354;
+	
 
+}
+.case h2{
+	font-size: 33.33px;
+	text-transform: uppercase;
+	padding: 108px 0px 72px 0px;
+}
+
+.case p{
+	font-family: Calibri, sans-serif;
+	font-size: 16.67px;
+	
+}
+
+.info_w{
+	padding-top: 669px;
+	text-align: left;
+	margin-left: 390px; 
+	float: left;
+	line-height: 30px;
+	
+
+}
+
+.info_w h3{
+	font-size: 25px;
+
+	
+}
+
+.info_w span{
+	font-family: Calibri, sans-serif;
+	font-size: 16.67px;
+	color: #3f495a;
+}
+
+.info_d{
+	padding: 669px 380px 0px 673px ;
+	text-align: left;
+	line-height: 26px;
+	
+}
+
+.info_d h4{
+	font-size: 25px;
+
+}
+
+.info_d p{
+	font-family: Calibri, sans-serif;
+	font-size: 20.83px;
+}
+
+.case input{
+	width: 200px;
+	height: 45px;
+	text-align: center;
+	font-size: 20.83px;
+	color: #fff;
+	border: 0px solid #fff;
+	border-radius: 8px;
+	background: #63b5ae;
+	float: left;
+	margin-left: 390px;
+
+}
+
+.price{
+	width: 100%;
+	height: 100%;
+	color: #1c2534;
+}
+
+.price h2{
+	font-size: 45.83px;
+	text-align: center;
+	padding-top: 170px;
+}
+
+.price h3{
+	font-size: 29.17px;
+	text-align: left;
+	padding-top: 50px;
+	margin-left: 493px;
+}
+
+.price select{
+	width: 891px;
+	height: 57px;
+	font-size: 16.67px;
+	color: #737373;
+	border: 0px solid #fff;
+	background: #eeeeee;
+	margin: 28.5px 0px 0px 493px;
+	padding-left: 23px;
+
+}
+
+.endprice {
+	font-size: 20.83px;
+	margin-left: 493px;
+	padding-top: 65px;
+	background: url(../img/longline.png) 0% 37px  no-repeat;
+
+}
+
+.endprice span{
+	float:right;
+	margin-right: 517px;
+
+}
