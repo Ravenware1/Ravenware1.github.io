@@ -144,17 +144,17 @@
 		<h3>ТИП САЙТА</h3>
 
 	<select name="list1" id="list">
-		<option value="Opt1">Тип сайта 1</option>
-		<option value="Opt2">Тип сайта 2</option>
-		<option value="Opt3">Тип сайта 3</option>
+		<option value="Opt1">Вариант 1</option>
+		<option value="Opt2">Вариант 2</option>
+		<option value="Opt3">Вариант 3</option>
 	</select>
 
 	<h3>ДИЗАЙН</h3>
 
 	<select name="list2" id="list">
-		<option value="Opt1">Дизайн 1</option>
-		<option value="Opt2">Дизайн 2</option>
-		<option value="Opt3">Дизайн 3</option>
+		<option value="Opt1">Вариант 1</option>
+		<option value="Opt2">Вариант 2</option>
+		<option value="Opt3">Вариант 3</option>
 	</select>
 
 	<h3>АДАПТИВНОСТЬ</h3>
@@ -236,26 +236,42 @@
 
 	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nesciunt itaque, officiis magni, expedita sint.</p>
 
-	<p>Санкт-Петербург <br> Невский проспект 11</p>
-	<p>info@companyname.com</p>
-	<p>+7 999 999-99-99</p>
+	<div class="contacts_info">
+		<img src="img/geo.png" alt="#">
+		<br><br>
+		<p>Санкт-Петербург <br> Невский проспект 11</p>
+	</div>
+
+	<div class="contacts_info">
+		<img src="img/mail.png" alt="#">
+		<br><br>
+		<p>info@companyname.com</p>
+	</div>
+	<div class="contacts_info">
+		<img src="img/phone.png" alt="#">
+		<br><br>
+		<p>+7 999 999-99-99</p>
+	</div>
+	
 
 
 <div class="submit">
 	<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
 
 	<form action="#">
-		<input type="text" name="text_input" value="Имя">
-		<input type="email" name="email_input" value="Email">
-		<textarea name="name1" id="1" cols="30" rows="10"></textarea>
+		<input type="text" size="25" name="text_input" value="Имя">
+		<input type="email" size="25" name="email_input" value="Email">
+		<br><br>
+		<textarea name="name1" id="1" cols="30" rows="1">Сообщение</textarea>
+		<br><br><br>
 
-		<input type="reset" value="Отправить">
+		<div class="submit_end"><input type="reset" value="Отправить"></div>
 </div>
 </div>
 </form>
 
 
-<p>Copyright&#169 2021 Андрей браун. Design by Web</p>
+<div class="end"><p>Copyright&#169 2021 Андрей браун. Design by Web</p></div>
 
 </body>
 
