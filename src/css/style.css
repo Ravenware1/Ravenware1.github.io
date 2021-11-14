@@ -8,7 +8,7 @@ font-family: "Franklin Gothic", sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
-    background: #344051;
+    background: white;
     z-index: 1001;
     }
 
@@ -551,7 +551,7 @@ main{
 
 .submit input{
 	
-	margin: 46px 15px 0px 15px;
+	margin: 46px 14px 0px 14px;
 	padding: 10px 230px 14px 14px;
 	font-size: 16.67px;
 	color: #5d5d5e;
@@ -562,7 +562,8 @@ main{
  	font-family: "Franklin Gothic", sans-serif;
  	font-size: 16.67px;
  	color: #5d5d5e;
- 	padding: 10px 649px 75px 14px;
+ 	margin: 0px 28px 0px 14px;
+ 	padding: 10px 635px 75px 14px;
  	opacity: 0;
 	animation: areamove1 1s ease forwards;
 	animation-delay: 2.4s;
