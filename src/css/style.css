@@ -2,10 +2,77 @@ body{
 font-family: "Franklin Gothic", sans-serif;
 }
 
+.preloader {
+	position: fixed;
+	left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #344051;
+    z-index: 1001;
+    }
+
+.preloader__row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    .preloader__item {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      background-color: #337ab7;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+
+    .preloader__item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -1s;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes preloader-bounce {
+
+      0%,
+      100% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+
 nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
 }
 
 .logo{
@@ -14,7 +81,7 @@ nav{
 	line-height: 60px;
 	padding-left: 390px;
 	float: left;
-
+	animation: comming 2s ease;
 }
 
 .menu{
@@ -30,12 +97,40 @@ nav{
 	line-height: 60px;
 	margin-right: 40px;
 	text-transform: uppercase;
+	animation: tophshift 0.4s ease forwards;
+	opacity: 0;
 
+}
+
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color: #e88604;
+	
+}
+
+.menu li a:active{
+	transform: scale(1.1);
+}
+
+main{
+	width: 100%
+	height: 100%;
+	display: ruby-base-container;
 }
 
 .main{
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 	background: url(../img/boy.png) 90% 100%/auto 85%  no-repeat , url(../img/bg.jpg) center/cover  no-repeat;
 }
 
@@ -44,7 +139,9 @@ nav{
 	margin: 430px 0px 0px 400px;
 	color: #2c384a;
 	text-align: center;
-
+	opacity: 0;
+	animation: titlemove 1s ease forwards;
+	animation-delay: 2.4s;
 }
 
 .title__container h1{
@@ -68,8 +165,72 @@ nav{
 	color: #6d7682;
 	padding: 0px 16px;
 	margin: 60px 14px 0px 14px;
+	transition: all 0.2s;
+	transform: scale(1);
 
+}
 
+.title__container input:hover{
+	background: #344051;
+	color: white;
+
+}
+
+.title__container input:active{
+	transform: scale(1.1);
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes tophshift{
+	from{
+		opacity: 1;
+		margin-top: -80px;
+	}
+
+	to{
+		opacity: 2;
+		margin-top: 0px;
+	}
+}
+
+@keyframes titlemove{
+	from{
+		opacity: 1;
+		margin-left: -500px;
+	}
+
+	to{
+		opacity: 2;
+		margin-left: 400px;
+	}
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s
+}
+
+.menu li:nth-child(3){
+	animation-delay: 0.8s
+}
+
+.menu li:nth-child(4){
+	animation-delay: 1.2s
+}
+
+.menu li:nth-child(5){
+	animation-delay: 1.6s
+}
+
+.menu li:nth-child(6){
+	animation-delay: 2s
 }
 
 .info{
@@ -112,7 +273,18 @@ nav{
 	border: 2px solid #6f707e;
 	border-radius: 8px;
 	padding: 7px 12px 7px 32px;
-	background: url(../img/download.png) 5% 50%  no-repeat;	
+	background: url(../img/download.png) 5% 50%  no-repeat;
+	transition: all 0.2s;
+	transform: scale(1);	
+}
+
+.info_s input:hover{
+	background: #344051 url(../img/download.png) 5% 50%  no-repeat;
+	color: white;
+}
+
+.info_s input:active{
+	transform: scale(1.1);
 }
 
 .skills{
@@ -171,7 +343,7 @@ nav{
 .case p{
 	font-family: Calibri, sans-serif;
 	font-size: 16.67px;
-	
+	animation: comming 1.5s ease;
 }
 
 .info_w{
@@ -180,7 +352,7 @@ nav{
 	margin-left: 390px; 
 	float: left;
 	line-height: 30px;
-	
+	animation: comming 3.5s ease;
 
 }
 
@@ -200,7 +372,7 @@ nav{
 	padding: 669px 380px 0px 673px ;
 	text-align: left;
 	line-height: 26px;
-	
+	animation: comming 5.5s ease;
 }
 
 .info_d h4{
@@ -224,7 +396,16 @@ nav{
 	background: #63b5ae;
 	float: left;
 	margin-left: 390px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
 
+.case input:hover{
+	background: forestgreen;
+}
+
+.case input:active{
+	transform: scale(0.9);
 }
 
 .price{
@@ -274,13 +455,13 @@ nav{
 .stat{
 	width: 100%;
 	height: 55%;
-	background: url(../img/line.png) 50% 162px no-repeat, url(../img/bg3.jpg) center/cover no-repeat;
+	background: url(../img/line.png) 50% 162px no-repeat, url(../img/bg3.jpg) fixed center/cover no-repeat;
 	text-align: center;
 	color: #323d4f;
 
 
 }
-.stat_h h2{
+.stat h2{
 	font-size: 33.33px;
 	padding-top: 108px;
 }
@@ -300,6 +481,8 @@ nav{
 .item_stat p{
 	font-size: 16px;
 }
+
+
 
 .feedback{
 	width: 100%;
@@ -372,8 +555,7 @@ nav{
 	padding: 10px 230px 14px 14px;
 	font-size: 16.67px;
 	color: #5d5d5e;
-
-
+	opacity: 0;
 }
  
  .submit textarea{
@@ -381,8 +563,57 @@ nav{
  	font-size: 16.67px;
  	color: #5d5d5e;
  	padding: 10px 649px 75px 14px;
+ 	opacity: 0;
+	animation: areamove1 1s ease forwards;
+	animation-delay: 2.4s;
 
  }
+
+ .submit input[type=text]{
+ 	animation: areamove2 1s ease forwards;
+	animation-delay: 2.4s;
+ }
+
+ .submit input[type=email]{
+ 	animation: areamove3 1s ease forwards;
+	animation-delay: 2.4s;
+ }
+
+@keyframes areamove1{
+	from{
+		opacity: 1;
+		margin-bottom: -500px;
+	}
+
+	to{
+		opacity: 2;
+		margin-bottom: 0px;
+	}
+}
+
+ @keyframes areamove2{
+	from{
+		opacity: 1;
+		margin-left: -500px;
+	}
+
+	to{
+		opacity: 2;
+		margin-left: 0px;
+	}
+}
+
+ @keyframes areamove3{
+	from{
+		opacity: 1;
+		margin-left: 1000px;
+	}
+
+	to{
+		opacity: 2;
+		margin-left: 0px;
+	}
+}
 
  .submit_end input{
  	font-size: 20.83px;
@@ -393,6 +624,19 @@ nav{
  	margin-top: 1px;
  	border-radius: 8px;
  	background: none;
+ 	transform: scale(1);
+ 	opacity: 0;
+ 	animation: comming 3.5s ease forwards;
+ 	animation-delay: 2.8s;
+ }
+
+ .submit_end input:hover{
+ 	background: white;
+ 	color: black;
+ }
+
+ .submit_end input:active{
+ 	transform:scale(0.9);
  }
 
 .end{
